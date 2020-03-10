@@ -8,7 +8,7 @@ import java.io.IOException;
 import org.junit.Test;
 import org.koans.helpers.Koans;
 
-public class Lesson1SurpressedExceptions extends Koans
+public class Lesson2SurpressedExceptions extends Koans
 {
   public static class AlwaysBe implements Closeable
   {
@@ -54,8 +54,8 @@ public class Lesson1SurpressedExceptions extends Koans
     catch (Exception e)
     {
       e.printStackTrace();
-      assertEquals(___, e.getSuppressed().length);
       assertEquals(___, e.getMessage());
+      assertEquals(___, e.getSuppressed().length);
       assertEquals(___, e.getSuppressed()[0].getMessage());
     }
   }
